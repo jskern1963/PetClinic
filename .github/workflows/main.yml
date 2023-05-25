@@ -16,7 +16,6 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          registry: ${{ jskern1963/PetClinic }}
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
